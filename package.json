@@ -1,6 +1,6 @@
 {
   "name": "redux-ua",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "./lib/index.js",
   "dependencies": {},
@@ -8,8 +8,10 @@
     "@babel/cli": "^7.0.0-beta.53",
     "@babel/core": "^7.0.0-beta.53",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.53",
+    "@babel/plugin-transform-runtime": "^7.0.0-beta.53",
     "@babel/preset-env": "^7.0.0-beta.53",
     "@babel/register": "^7.0.0-beta.53",
+    "@babel/runtime": "^7.0.0-beta.53",
     "babel-loader": "^8.0.0-beta.4",
     "cross-env": "^5.2.0",
     "rimraf": "^2.6.2",
@@ -34,6 +36,10 @@
   },
   "author": "borm",
   "license": "ISC",
-  "files": ["README.md", "lib", "dist"],
+  "files": [
+    "README.md",
+    "lib",
+    "dist"
+  ],
   "npmName": "redux-ua"
 }
