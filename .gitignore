@@ -1,0 +1,4 @@
+.idea
+dist
+lib
+package-lock.json
