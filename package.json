@@ -1,8 +1,8 @@
 {
   "name": "redux-ua",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
-  "main": "webpack.config.babel.js",
+  "main": "./lib/index.js",
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.53",
@@ -25,7 +25,14 @@
     "build:umd:min": "cross-env NODE_ENV=production webpack",
     "prepublish": "npm run build"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borm/redux-ua.git"
+  },
+  "bugs": {
+    "url": "https://github.com/borm/redux-ua/issues"
+  },
+  "author": "borm",
   "license": "ISC",
   "files": ["README.md", "lib", "dist"],
   "npmName": "redux-ua"
