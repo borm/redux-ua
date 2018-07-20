@@ -11,7 +11,7 @@ const createActions = (prefix, actionsObject) => {
 
     let isResultExist = false;
     const action = (...args) => async (dispatch, getState) => {
-      dispatch({ key, type: BEGIN });
+      dispatch({ key, type: BEGIN, payload: { loading: true, data: {} } });
       try {
         let result = await actionsObject[key](...args);
         if (typeof result === 'function') {
