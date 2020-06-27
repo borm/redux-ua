@@ -176,7 +176,9 @@ export function handleActions(
           ) =>
             handleState(key, state, {
               ...payload,
-              loaded: state[key].loaded || payload.loaded,
+              loaded:
+                (isFunction ? state.loaded : state[key].loaded) ||
+                payload.loaded,
             });
         }
       });
